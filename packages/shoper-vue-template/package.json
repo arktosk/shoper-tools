@@ -1,0 +1,23 @@
+{
+  "name": "@shoper/shoper-vue-template",
+  "version": "0.0.0",
+  "description": "Boilerplate usage Vue.js framework in Shoper e-commerce.",
+  "author": "Arkadiusz S. Krauzowicz <arkadiusz.krauzowicz@cube11.pl>",
+  "license": "MIT",
+  "main": "lib/shoper-vue-template.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arktosk/shoper-tools",
+    "directory": "packages/shoper-vue-template"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

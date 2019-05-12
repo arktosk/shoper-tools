@@ -1,0 +1,9 @@
+{
+  "name": "root",
+  "private": true,
+  "author": "Arkadiusz S. Krauzowicz <arkadiusz.krauzowicz@cube11.pl>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.13.4"
+  }
+}

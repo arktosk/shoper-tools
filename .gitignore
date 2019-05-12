@@ -1,0 +1,10 @@
+# node.js dependencies:
+**/node_modules
+
+# logs:
+lerna-debug.log
+npm-debug.log
+
+# misc:
+.idea
+.vscode
