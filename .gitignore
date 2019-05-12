@@ -1,6 +1,10 @@
 # node.js dependencies:
 **/node_modules
 
+# builds
+**/build
+**/lib
+
 # logs:
 lerna-debug.log
 npm-debug.log

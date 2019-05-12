@@ -1,7 +1,7 @@
 {
   "name": "@shoper/shoper-scripts",
   "version": "0.0.0",
-  "description": "Configuration and helper scripts for Shoper e-commerce.",
+  "description": "Configuration and helper scripts for development Shoper e-commerce themes.",
   "author": "Arkadiusz S. Krauzowicz <arkadiusz.krauzowicz@cube11.pl>",
   "license": "MIT",
   "main": "lib/shoper-scripts.js",
@@ -10,14 +10,18 @@
     "url": "https://github.com/arktosk/shoper-tools",
     "directory": "packages/shoper-scripts"
   },
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
   "files": [
+    "config",
+    "scripts",
     "lib"
   ],
+  "bin": {
+    "shoper-scripts": "lib/shoper-scripts.js"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "tsc": "tsc"
   }
 }
