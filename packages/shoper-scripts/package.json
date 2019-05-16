@@ -12,17 +12,25 @@
   },
   "files": [
     "config",
-    "scripts",
     "lib"
   ],
   "bin": {
     "shoper-scripts": "lib/shoper-scripts.js"
   },
   "scripts": {
-    "tsc": "tsc --watch"
+    "compile": "tsc --watch",
+    "lint": "tslint -p ./tsconfig.json **/*.ts"
   },
   "devDependencies": {
     "@types/node": "^12.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.17.1",
     "typescript": "^3.4.5"
   }
 }

@@ -1,3 +1,1 @@
-
-
-export const start: string = 'Start script';
+export const startScript = "Start script 123";

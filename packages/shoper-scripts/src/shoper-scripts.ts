@@ -1,15 +1,15 @@
 #!/usr/bin/env node
-
-console.log('Shoper Scripts');
-
-console.log(process.argv.slice(2));
+import { startScript } from "./scripts/start";
 
 const enum Scripts {
-    start = 'start',
-    build = 'build',
-    test = 'test',
+  START = "start",
+  BUILD = "build",
+  TEST = "test",
 }
 
-console.log(Scripts.start);
-
-process.on('unhandledRejection', (error) => { throw error; });
+process.on(
+  "unhandledRejection",
+  (error): void => {
+    throw error;
+  }
+);
