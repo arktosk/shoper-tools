@@ -18,12 +18,18 @@
     "shoper-scripts": "lib/shoper-scripts.js"
   },
   "scripts": {
-    "compile": "tsc --watch",
-    "lint": "tslint -p ./tsconfig.json **/*.ts"
+    "start": "tsc --watch",
+    "build": "npm run lint && tsc",
+    "lint": "eslint --ext .tsx,.ts src/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "yargs": "^13.3.0"
+  },
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "@types/node": "^12.0.0",
+    "@types/yargs": "^13.0.0",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",
     "eslint": "^5.16.0",

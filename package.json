@@ -1,11 +1,21 @@
 {
-  "name": "root",
+  "name": "shoper-tools",
   "private": true,
+  "description": "Mono repository for Shoper e-commerce platform tools.",
   "author": "Arkadiusz S. Krauzowicz <arkadiusz.krauzowicz@cube11.pl>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arktosk/shoper-tools"
+  },
+  "scripts": {
+    "clean": "rimraf **/node_modules",
+    "bootstrap": "npm install && lerna bootstrap"
+  },
   "devDependencies": {
     "@types/node": "^12.0.0",
     "lerna": "^3.13.4",
+    "rimraf": "^2.6.3",
     "typescript": "^3.4.5"
   }
 }

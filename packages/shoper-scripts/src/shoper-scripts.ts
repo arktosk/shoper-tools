@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+
+import './config/env';
 export * from "./scripts";
 
 process.on(

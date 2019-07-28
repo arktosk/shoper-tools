@@ -23,6 +23,9 @@
         "import/no-unresolved": "off",
         "import/prefer-default-export": "off",
         "prettier/prettier": "off",
+        "semi": ["error", "always",{
+            "omitLastInOneLineBlock": false,
+        }],
         "comma-dangle": ["error", {
             "arrays": "always-multiline",
             "objects": "always-multiline",
