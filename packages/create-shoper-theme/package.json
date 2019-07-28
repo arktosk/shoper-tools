@@ -1,6 +1,6 @@
 {
   "name": "@shoper/create-shoper-theme",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "Create Shoper theme.",
   "author": "Arkadiusz S. Krauzowicz <arkadiusz.krauzowicz@cube11.pl>",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@shoper/shoper-scripts": "^0.0.0"
+    "@shoper/shoper-scripts": "^1.0.0-alpha.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
