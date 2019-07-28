@@ -1,15 +1,9 @@
 #!/usr/bin/env node
-import { startScript } from "./scripts/start";
-
-const enum Scripts {
-  START = "start",
-  BUILD = "build",
-  TEST = "test",
-}
+export * from "./scripts";
 
 process.on(
   "unhandledRejection",
-  (error): void => {
+  (error: Error): void => {
     throw error;
   }
 );
