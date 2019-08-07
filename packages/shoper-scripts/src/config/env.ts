@@ -8,7 +8,7 @@ if ((!fs.existsSync(paths.envFile))) console.warn(
     'To enable full functionality of development environment create ".env" file.'
   );
 
-const themePackageJsonFile = JSON.parse(fs.readFileSync(paths.themePackageJsonFile).toString());
+const themePackageJsonFile = (!fs.existsSync(paths.themePackageJsonFile)) ? {} : JSON.parse(fs.readFileSync(paths.themePackageJsonFile).toString());
 
 /**
  * Parse .env file and for now do not pass them to process.env.
@@ -63,5 +63,3 @@ environmentConfig.PROJECT_VERSION = themePackageJsonFile.version;
 
 /** Finally assign fully constructed environment config. */
 Object.assign(process.env, environmentConfig);
-
-console.log(environmentConfig);

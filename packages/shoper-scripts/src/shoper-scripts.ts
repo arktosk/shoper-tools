@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 import './config/env';
-export * from "./scripts";
+
+import {paths} from './config';
+// console.log(process.env.WEBDAV_HOSTNAME);
 
 process.on(
   "unhandledRejection",
