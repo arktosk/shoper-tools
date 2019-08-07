@@ -18,6 +18,7 @@
     "lib"
   ],
   "scripts": {
+    "start": "shoper-scripts start",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
