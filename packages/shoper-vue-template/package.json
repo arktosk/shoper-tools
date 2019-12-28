@@ -1,6 +1,6 @@
 {
   "name": "@shoper/shoper-vue-template",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "Boilerplate usage Vue.js framework in Shoper e-commerce.",
   "author": "Arkadiusz S. Krauzowicz <arkadiusz.krauzowicz@cube11.pl>",
   "license": "MIT",
@@ -18,6 +18,18 @@
     "lib"
   ],
   "scripts": {
+    "start": "shoper-scripts start",
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@shoper/shoper-scripts": "^1.0.0-alpha.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.17.1"
   }
 }

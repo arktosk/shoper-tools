@@ -1,2 +1,11 @@
-# typescript source files:
-src
+# NPM registry main ignores:
+package-lock.json
+.npmignore
+.gitignore
+
+# TypeScript ignores:
+tsconfig.json
+src/
+
+# ESLint ignores:
+.eslintrc

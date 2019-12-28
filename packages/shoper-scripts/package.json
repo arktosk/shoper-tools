@@ -1,6 +1,6 @@
 {
   "name": "@shoper/shoper-scripts",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "Configuration and helper scripts for development Shoper e-commerce themes.",
   "author": "Arkadiusz S. Krauzowicz <arkadiusz.krauzowicz@cube11.pl>",
   "license": "MIT",
@@ -12,16 +12,32 @@
   },
   "files": [
     "config",
-    "scripts",
     "lib"
   ],
   "bin": {
     "shoper-scripts": "lib/shoper-scripts.js"
   },
-  "devDependencies": {
-    "@types/node": "^12.0.0"
-  },
   "scripts": {
-    "tsc": "tsc"
+    "start": "tsc --watch",
+    "build": "npm run lint && tsc",
+    "lint": "eslint --ext .tsx,.ts src/"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "yargs": "^13.3.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.0.0",
+    "@types/yargs": "^13.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.17.1",
+    "typescript": "^3.4.5"
   }
 }
